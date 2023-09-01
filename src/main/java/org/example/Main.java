@@ -10,6 +10,7 @@ public class Main {
 
         //System.out.println("Hello world!");
         new MyFrame();
+       // JLabel label = new JLabel();
 
     }
 }
