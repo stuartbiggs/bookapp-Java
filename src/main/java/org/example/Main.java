@@ -8,10 +8,9 @@ import java.awt.event.ActionEvent;
 public class Main {
     public static void main(String[] args) {
 
-        //System.out.println("Hello world!");
-        new MyFrame();
-       // JLabel label = new JLabel();
-
+        //new MyFrame();
+        //new MyFrame2();
+        new MyClass();
     }
 }
 
