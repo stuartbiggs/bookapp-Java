@@ -8,9 +8,7 @@ import java.awt.event.ActionEvent;
 public class Main {
     public static void main(String[] args) {
 
-        //new MyFrame();
-        //new MyFrame2();
-        new MyClass();
+        new MyFrame2();
     }
 }
 

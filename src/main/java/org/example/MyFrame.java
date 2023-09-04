@@ -1,3 +1,4 @@
+/*
 package org.example;
 
 import javax.swing.*;
@@ -68,7 +69,8 @@ public class MyFrame extends JFrame {
     // //System.out.println("click");
     // }
     // }
-    /*
+    */
+/*
      * @Override
      * public void ancestorAdded(AncestorEvent event) {
      * 
@@ -83,11 +85,15 @@ public class MyFrame extends JFrame {
      * public void ancestorMoved(AncestorEvent event) {
      * 
      * }
-     */
-    /*
+     *//*
+
+    */
+/*
      * @Override
      * public void ancestorAdded(AncestorEvent event) {
      * 
      * }
-     */
+     *//*
+
 }
+*/
