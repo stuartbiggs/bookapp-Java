@@ -45,9 +45,18 @@ public class MyFrame2 extends JFrame {
 
             //Buttons
             Mon1.setBounds(10,10, 100,40);
-            Mon1.addActionListener(new ActionListener() {
+           /* Mon1.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent event) {
                     label1.setText("clicked");
+                }
+            });*/
+
+            Mon1.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if(e.getSource()==Mon1) {
+                        NewWindow myWindow = new NewWindow();
+                    }
                 }
             });
 
