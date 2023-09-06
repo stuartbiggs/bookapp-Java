@@ -61,23 +61,51 @@ public class MyFrame2 extends JFrame {
             });
 
             Mon2.setBounds(10, 60, 100, 40);
-            Mon2.addActionListener(new ActionListener() {
+            /*Mon2.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent event) {
                     label2.setText("clicked");
+                }
+            });*/
+            Mon2.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if(e.getSource()==Mon2) {
+                        NewWindow myWindow = new NewWindow();
+                    }
                 }
             });
 
             Mon3.setBounds(10, 110, 100, 40);
-            Mon3.addActionListener(new ActionListener() {
+            /*Mon3.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent event){
                     label3.setText("clicked");
                 }
             });
 
+             */
+
+            Mon3.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if(e.getSource()==Mon3) {
+                        NewWindow myWindow = new NewWindow();
+                    }
+                }
+            });
             Mon4.setBounds(10, 160, 100, 40);
-            Mon4.addActionListener(new ActionListener() {
+           /* Mon4.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent event){
                     label4.setText("clicked");
+                }
+            });
+
+*/
+            Mon4.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if(e.getSource()==Mon4) {
+                        NewWindow myWindow = new NewWindow();
+                    }
                 }
             });
 
