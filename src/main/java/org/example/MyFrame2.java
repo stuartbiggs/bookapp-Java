@@ -25,6 +25,7 @@ public class MyFrame2 extends JFrame {
             JButton Mon2 = new JButton("Feb");
             JButton Mon3 = new JButton("Mar");
             JButton Mon4 = new JButton("April");
+            JButton Quit = new JButton("Quit");
 
             JLabel label1 = new JLabel();
             JLabel label2 = new JLabel();
@@ -36,6 +37,7 @@ public class MyFrame2 extends JFrame {
             panel.add(Mon2);
             panel.add(Mon3);
             panel.add(Mon4);
+            panel.add(Quit);
             panel.add(label1);
             panel.add(label2);
             panel.add(label3);
@@ -44,13 +46,25 @@ public class MyFrame2 extends JFrame {
             panel.setVisible(true);
 
             //Buttons
-            Mon1.setBounds(10,10, 100,40);
+
+            Quit.setBounds(350,350,100,40);
+            Quit.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if(e.getSource()==Quit) {
+                        frame.dispose();
+                    }
+                }
+            });
+
+            //Mon1.setBounds(10,10, 100,40);
            /* Mon1.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent event) {
                     label1.setText("clicked");
                 }
             });*/
 
+            Mon1.setBounds(10,10, 100,40);
             Mon1.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -60,12 +74,14 @@ public class MyFrame2 extends JFrame {
                 }
             });
 
-            Mon2.setBounds(10, 60, 100, 40);
+            //Mon2.setBounds(10, 60, 100, 40);
             /*Mon2.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent event) {
                     label2.setText("clicked");
                 }
             });*/
+
+            Mon2.setBounds(10, 60, 100, 40);
             Mon2.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -75,7 +91,7 @@ public class MyFrame2 extends JFrame {
                 }
             });
 
-            Mon3.setBounds(10, 110, 100, 40);
+            //Mon3.setBounds(10, 110, 100, 40);
             /*Mon3.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent event){
                     label3.setText("clicked");
@@ -83,7 +99,7 @@ public class MyFrame2 extends JFrame {
             });
 
              */
-
+            Mon3.setBounds(10, 110, 100, 40);
             Mon3.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -92,7 +108,7 @@ public class MyFrame2 extends JFrame {
                     }
                 }
             });
-            Mon4.setBounds(10, 160, 100, 40);
+            //Mon4.setBounds(10, 160, 100, 40);
            /* Mon4.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent event){
                     label4.setText("clicked");
@@ -100,6 +116,7 @@ public class MyFrame2 extends JFrame {
             });
 
 */
+            Mon4.setBounds(10, 160, 100, 40);
             Mon4.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
